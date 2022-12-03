@@ -1,19 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
-body{
+
+body {
     background-color: antiquewhite;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-nav{
+nav {
     font-family: 'Ubuntu', sans-serif;
 }
 
-nav ul{
+nav ul {
     display: flex;
     align-items: center;
     list-style-type: none;
@@ -22,17 +23,21 @@ nav ul{
     color: white;
 }
 
-nav ul li{
+nav ul li {
     padding: 0 12px;
     font-size: 1.5rem;
 }
 
-#PFM{
-    float: right;
+nav ul li a{
+    padding: 0 12px;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
 }
 
 
-.brand img{
+
+.brand img {
     width: 58px;
     padding: 0 8px;
 }
@@ -41,25 +46,31 @@ nav ul li{
     display: flex;
     align-items: center;
     font-weight: bolder;
-    font-size: 2.4rem; 
+    font-size: 2.4rem;
 }
 
-.container{
+.container {
     min-height: 75vh;
     background-color: black;
     color: white;
-   font-family: 'Varela Round', sans-serif;
-   display: flex;
-   margin: 23px auto;
-   width: 70%;
-   border-radius: 12px;
-   padding: 34px;
-   background-image: url('album_cover_pritam.jpg');
-   background-repeat: no-repeat;
-   background-position: center;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url('album_cover_pritam.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.bottom{
+.container p{
+    font-family: 'Varela Round', sans-serif;
+    color: white;
+    font-size: 2.2rem;
+}
+
+.bottom {
     position: sticky;
     bottom: 0;
     height: 130px;
@@ -68,25 +79,26 @@ nav ul li{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; 
+    flex-direction: column;
 }
 
-.icons{
-    margin-top: 14px; 
+.icons {
+    margin-top: 14px;
 }
-.icons i{
+
+.icons i {
     cursor: pointer;
 }
 
-#myProgressBar{
-    width: 80vw; 
+#myProgressBar {
+    width: 80vw;
     cursor: pointer;
     background: green;
     -webkit-appearance: none;
     height: 7px;
     outline: none;
     border-radius: 3px;
-    
+
 }
 
 
@@ -94,15 +106,15 @@ nav ul li{
 
 
 
-.songItemContainer{
+.songItemContainer {
     margin-top: 74px;
 }
 
-.songItem{
+.songItem {
     height: 50px;
     display: flex;
     background-color: white;
-    
+
     color: black;
     margin: 12px 0;
     justify-content: space-between;
@@ -110,33 +122,33 @@ nav ul li{
     border-radius: 34px;
 }
 
-.songItem img{
+.songItem img {
     width: 43px;
     margin: 0 23px;
     border-radius: 34px;
 }
 
-.timestamp{
+.timestamp {
     margin: 0 23px;
 }
 
-.timestamp i{
+.timestamp i {
     cursor: pointer;
 }
 
-.songInfo{
+.songInfo {
     position: absolute;
     left: 10vw;
     font-family: 'Varela Round', sans-serif;
 }
 
-.songInfo img{
+.songInfo img {
     opacity: 0;
     transition: opacity 0.4s ease-in;
 }
 
 @media only screen and (max-width: 1100px) {
     body {
-      background-color: antiquewhite;
+        background-color: antiquewhite;
     }
-  }
+}
